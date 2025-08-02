@@ -10,7 +10,7 @@ function LandingPage() {
             <div className='min-h-screen bg-white '>
                 <nav className='flex justify-between shadow-xl px-6 sm:px-10 py-4 '>
                     <div className='flex items-center gap-x-2 text-2xl font-bold'>
-                        <FontAwesomeIcon icon={faCartShopping} className="text-red-600" />
+                        <FontAwesomeIcon icon={faCartShopping} className="text-indigo-400" />
                         <h1>MarketEase</h1>
                     </div>
                     <div>
