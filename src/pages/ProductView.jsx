@@ -36,7 +36,7 @@ function ProductView() {
 
                     (
                         <div className='max-w-6xl w-full mx-auto grid sm:grid-cols-1 md:grid-cols-2 shadow-2xl m-10'>
-                            <div className='bg-red-200'>
+                            <div className='bg-indigo-300'>
                                 <img src={product.thumbnail} alt={product.title} className="w-full h-auto rounded-lg shadow-md" />
                             </div>
                             <div className="flex flex-col gap-4 p-6">
@@ -79,7 +79,7 @@ function ProductView() {
                                     Return Policy: {product.returnPolicy }
                                 </p>
 
-                                <button className="mt-4 bg-red-600 hover:bg-red-700 text-white py-2 px-6 rounded flex items-center gap-2 w-fit">
+                                <button className="mt-4 bg-indigo-300 hover:bg-indigo-300 text-white py-2 px-6 rounded flex items-center gap-2 w-fit">
                                     <FontAwesomeIcon icon={faCartPlus} />
                                     Add to Cart
                                 </button>

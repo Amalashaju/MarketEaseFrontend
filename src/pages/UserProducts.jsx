@@ -83,31 +83,31 @@ function UserProducts() {
             
             <Header/>
            
-            <div className="p-6">
+            <div className="p-6 ">
                 <h2 className="text-2xl font-bold mb-4 text-center">My Products</h2>
                 {userProducts.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
                         {userProducts.map((item, index) => (
-                            <div className="bg-white p-4 shadow-md rounded-lg" key={index}
+                            <div className=" bg-gray-200 p-4 shadow-xl rounded-lg" key={index}
                                 hidden={item.status === 'pending' || item.status === 'sold'}>
                                 <img src={item.imageurl} alt={item.title} className="h-48 w-full object-cover rounded" />
                                 <div className="mt-3">
                                     <h3 className="font-bold text-lg">{item.productName}</h3>
                                     <p className="text-gray-600 text-sm">{item.description?.slice(0, 50)}...</p>
-                                    <p className="text-red-300 font-semibold mt-2">₹ {item.price}</p>
-                                    <div className='flex justify-end gap-3'>
+                                    <p className="text-indigo-300font-semibold mt-2">₹ {item.price}</p>
+                                    <div className='flex justify-end gap-3 font-bold'>
                                         <button
                                             onClick={() => {
                                                 setSelectedProduct(item);
                                                 setShowUpdateForm(true);
                                             }}
-                                            className="mt-3 bg-red-400 text-white py-2 px-4 rounded hover:bg-white hover:text-blue-700 hover:border hover:border-blue-700 transition-all"
+                                            className="mt-3 bg-indigo-400 text-black py-2 px-4 rounded hover:bg-white hover:text-blue-700 hover:border hover:border-blue-700 transition-all"
                                         >
                                             Update
                                         </button>
                                         <button
                                             onClick={() => handleDelete(item._id)}
-                                            className="mt-3 bg-red-400 text-white py-2 px-4 rounded hover:bg-white hover:text-blue-700 hover:border hover:border-blue-700 transition-all"
+                                            className="mt-3 bg-indigo-400 text-black py-2 px-4 rounded hover:bg-white hover:text-blue-700 hover:border hover:border-blue-700 transition-all"
                                         >
                                             Delete
                                         </button>
@@ -124,7 +124,7 @@ function UserProducts() {
           
             {showUpdateForm && selectedProduct && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm  bg-opacity-10">
-                    <div className='w-full max-w-4xl shadow-lg bg-white p-8 rounded-xl'>
+                    <div className='w-full max-w-4xl shadow-lg border bg-white p-8 rounded-xl'>
                         <h1 className='text-black text-center font-bold text-2xl mb-6'>Update Product</h1>
                         <form onSubmit={handleUpdateProduct}>
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-6'>
@@ -163,8 +163,8 @@ function UserProducts() {
                                         <input type="text" value={selectedProduct.stock} onChange={(e) => setSelectedProduct({ ...selectedProduct, stock: e.target.value })} className='w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400' />
                                     </div>
                                     <div className="flex justify-end mt-4 gap-3">
-                                        <button type="submit" className="bg-red-300 text-white px-4 py-2 rounded">Save</button>
-                                        <button onClick={() => setShowUpdateForm(false)} className="bg-gray-400 text-white px-4 py-2 rounded">Cancel</button>
+                                        <button type="submit" className="bg-indigo-500 text-white px-4 py-2 rounded">Save</button>
+                                        <button onClick={() => setShowUpdateForm(false)} className="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
                                     </div>
                                 </div>
                             </div>

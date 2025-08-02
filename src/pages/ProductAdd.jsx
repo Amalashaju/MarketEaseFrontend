@@ -75,7 +75,7 @@ function ProductAdd() {
                 <Header/>
 
                 <div className='flex items-center justify-center mt-20 px-4'>
-                    <div className='w-full max-w-4xl shadow-md bg-red-300 p-8 rounded-xl'>
+                    <div className='w-full max-w-4xl shadow-md bg-indigo-300 p-8 rounded-xl'>
                         <h1 className='text-black text-center font-bold text-2xl mb-6'>Add Products</h1>
 
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-6'>

@@ -23,7 +23,7 @@ function LandingPage() {
                         <p className="text-gray-600 mt-4 max-w-md text-2xl pt-3">
                             Your one-stop shop for all your daily needs. Fast delivery, best deals, and a great shopping experience.
                         </p>
-                        <Link to={'/login'}><button className='bg-red-400 p-3 rounded font-bold text-black mt-5 pt-4'>Get Started</button></Link>
+                        <Link to={'/login'}><button className='bg-indigo-300 p-4 rounded font-bold text-black mt-5 pt-4'>Get Started</button></Link>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">

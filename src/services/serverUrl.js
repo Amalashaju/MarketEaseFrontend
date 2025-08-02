@@ -1,1 +1,2 @@
-export const serverUrl='https://marketeasebackend.onrender.com'
+
+ export const serverUrl='https://marketeasebackend.onrender.com'
