@@ -94,7 +94,7 @@ function UserProducts() {
                                 <div className="mt-3">
                                     <h3 className="font-bold text-lg">{item.productName}</h3>
                                     <p className="text-gray-600 text-sm">{item.description?.slice(0, 50)}...</p>
-                                    <p className="text-indigo-300font-semibold mt-2">₹ {item.price}</p>
+                                    <p className="text-indigo-300font-semibold mt-2">$ {item.price}</p>
                                     <div className='flex justify-end gap-3 font-bold'>
                                         <button
                                             onClick={() => {

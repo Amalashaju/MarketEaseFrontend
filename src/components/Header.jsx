@@ -18,7 +18,7 @@ function Header() {
             <nav className="shadow-xl px-10 py-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-x-2 text-2xl font-bold">
-                        <FontAwesomeIcon icon={faCartShopping} className="text-red-600" />
+                        <FontAwesomeIcon icon={faCartShopping} className="text-indigo-400" />
                         <h1>MarketEase</h1>
                     </div>
                     <div className="hidden md:flex gap-4 text-center font-bold">
